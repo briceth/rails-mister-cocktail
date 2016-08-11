@@ -1,0 +1,13 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-offset-4 col-sm-4">
+      <%= form_for @cocktail do |f|%>
+        <%= f.label :name, "Entrez un nom de cocktail" %>
+        <%= f.text_field :name %>
+        <%= f.submit %>
+      <% end %>
+    <%= link_to 'retour', cocktails_path, class: "btn btn-primary" %>
+    </div>
+  </div>
+</div>

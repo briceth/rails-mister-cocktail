@@ -1,0 +1,8 @@
+<h1>voici les cocktails qui contiennent "<%=  @ingredient.name %>"</h1>
+<ul>
+  <% @ingredient.cocktails.each do |cocktail| %>
+    <li>
+      <%= cocktail.name %>
+    </li>
+  <% end %>
+</ul>
