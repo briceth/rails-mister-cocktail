@@ -5,9 +5,10 @@
         <% @cocktails.each do |cocktail| %>
           <div class="col-xs-12 col-sm-6 col-md-3">
             <div class="card">
-              <%= image_tag "https://unsplash.it/200/300/?random", class: "#" %>
-              <h2><%= cocktail.name  %></h2>
-              <%= link_to 'allez voir', cocktail_path(cocktail), class: "btn btn-warning" %>
+              <%= link_to cocktail_path(cocktail), class: "#" do %>
+                <%= image_tag "https://unsplash.it/200/300/?random", class: "#" %>
+              <% end %>
+                <div class="card-name"><h2><%= cocktail.name  %></h2></div>
             </div>
           </div>
         <% end %>
