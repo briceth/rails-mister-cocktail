@@ -4,44 +4,25 @@
 .wrapper {
   background-color: #FFFFFF;
 }
-img {
+.card {
+  height: 200px;
+  background-size: cover !important;
+  position: relative;
+  margin-top: 25px;
   border-radius: 3px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.6);
 }
-
-h2 {
+.card-description {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+.card-description h2 {
   font-weight: 10px;
   font-size: 15px;
-}
-.card {
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
   color: white;
-  position: relative;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
 }
-
-.media {
-  display: flex;
-}
-.media-body {
-  flex: 1 1 auto;
-  padding: 20px;
-}
-.media-body img {
-  width: 100%;
-}
-.media-aside {
-  flex: 0 0 400px;
-  padding: 30px;
-  align-self: stretch;
-  background: #F8F7F7;
-  border-left: 1px solid #f0efef;
-}
-.media-section {
-  margin: 40px auto;
-}
-.media-section:first-child {
-  margin-top: 0;
-}
-.media-section:last-child {
-  margin-bottom: 0;
+.new-cocktail {
+  margin-top: 50px;
 }

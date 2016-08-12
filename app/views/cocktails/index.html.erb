@@ -4,16 +4,15 @@
       <div class="row">
         <% @cocktails.each do |cocktail| %>
           <div class="col-xs-12 col-sm-6 col-md-3">
-            <div class="card">
-              <%= link_to cocktail_path(cocktail), class: "#" do %>
-                <%= image_tag "https://unsplash.it/200/300/?random", class: "#" %>
-              <% end %>
-                <div class="card-name"><h2><%= cocktail.name  %></h2></div>
-            </div>
+              <%= link_to cocktail_path(cocktail), class: "card-link" do %>
+                <div class="card" style="background-image: url('https://unsplash.it/200/300/?random');">
+                <div class="card-description"><h2><%= cocktail.name  %></h2></div>
+              </div>
+            <% end %>
           </div>
         <% end %>
       </div>
     </div>
-    <%= link_to "Ajoutez un cocktail", new_cocktail_path, class: "btn btn-primary"%>
+    <div class="new-cocktail"><%= link_to "Ajoutez un cocktail", new_cocktail_path, class: "btn btn-primary"%></div>
   </div>
 </div>
