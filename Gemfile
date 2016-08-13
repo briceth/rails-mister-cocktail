@@ -33,6 +33,7 @@ gem 'cloudinary', '1.1.0'
 gem 'carrierwave'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'responders'
 
 # bootsrap and simple form
 gem 'bootstrap-sass'
