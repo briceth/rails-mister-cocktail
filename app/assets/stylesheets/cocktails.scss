@@ -6,7 +6,8 @@
 }
 .card {
   height: 200px;
-  background-size: cover !important;
+  background-size: cover;
+  text-align: center;
   position: relative;
   margin-top: 25px;
   border-radius: 3px;
@@ -25,4 +26,39 @@
 }
 .new-cocktail {
   margin-top: 50px;
+}
+.media {
+  display: flex;
+}
+.media-body {
+  flex: 1 1 auto;
+  padding: 20px;
+}
+.media-image {
+  height: 400px;
+  background-size: cover !important;
+  background-position: center;
+  margin-right: 75px;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+}
+.media-aside {
+  flex: 0 0 400px;
+  padding: 30px;
+  margin-right: 45px;
+  align-self: stretch;
+  background: #F8F7F7;
+  border-left: 1px solid #f0efef;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
+  height: 450px;
+}
+.media-section {
+  margin: 40px auto;
+}
+.media-section:first-child {
+  margin-top: 0;
+}
+.media-section:last-child {
+  margin-bottom: 0;
 }
