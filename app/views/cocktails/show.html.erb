@@ -7,10 +7,12 @@
       </div>
       <div class="media-section">
         <h3>Description</h3>
+
            <ul class="list-unstyled">
             <% @cocktail.doses.each do |dose| %>
             <li>
               <%= dose.description %>(<%= dose.ingredient.name %>)
+              <%= link_to "Delete", cocktail_dose_path(dose.cocktail, dose), method: :delete %>
             </li>
             <% end %>
           </ul>
